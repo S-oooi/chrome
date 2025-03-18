@@ -1,0 +1,24 @@
+json
+
+Collapse
+
+Wrap
+
+Copy
+{
+  "manifest_version": 3,
+  "name": "英译中剪贴板",
+  "version": "1.0",
+  "description": "自动将剪贴板中的英文翻译成中文",
+  "permissions": [
+    "clipboardRead",
+    "clipboardWrite",
+    "notifications"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "icons": {
+    "128": "icon.png"
+  }
+}
