@@ -1,23 +1,23 @@
-json
 
-Collapse
-
-Wrap
-
-Copy
 {
+  
   "manifest_version": 3,
-  "name": "英译中剪贴板",
+  "name": "Translation plugins",
   "version": "1.0",
-  "description": "自动将剪贴板中的英文翻译成中文",
-  "permissions": [
-    "clipboardRead",
-    "clipboardWrite",
-    "notifications"
-  ],
-  "background": {
-    "service_worker": "background.js"
+  "description": "自动将copy板中的英文翻译成中文",
+  "permissions": ["storage", "activeTab"],
+  "action": {
+    "default_popup": "popup.html"
   },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ],
+  // "background": {
+  //   "service_worker": "background.js"
+  // },
   "icons": {
     "128": "icon.png"
   }
