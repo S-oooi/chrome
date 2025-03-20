@@ -1,3 +1,4 @@
+//监听copy事件
 document.addEventListener('copy', () => {
     const text = window.getSelection().toString();
     if (text) {
