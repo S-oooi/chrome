@@ -1,3 +1,7 @@
+
+const SILICON_FLOW_API_KEY = "sk-918a85d620604652a27ed72f92022ee7";
+const SILICON_FLOW_API_URL = "https://api.deepseek.com/v1/chat/completions";
+
 chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
   if (request.type === 'COPIED_TEXT') {
     const copiedText = request.text;
