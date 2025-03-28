@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Clipboard Translator</title>
-    <link rel="stylesheet" href="styles.css">
+  
     <style>
         body {
           width: 280px;
@@ -15,6 +15,17 @@
           font-size: 18px;
           font-weight: normal;
           color: #e91e63;
+        }
+        #original {
+          margin-top: 10px;
+          font-family: 'Comic Sans MS', cursive;
+          font-size: 14px;
+          font-weight: normal;
+          color: #f06292; /* 稍浅的粉色，与翻译区分 */
+          word-wrap: break-word;
+          background-color: #fce4ec; /* 浅粉背景 */
+          padding: 8px;
+          border-radius: 4px;
         }
         #translation {
           margin-top: 10px;
@@ -28,6 +39,7 @@
 </head>
 <body>
     <h3>Clipboard Translator</h3>
+    <p id="original">Copy text to translate...</p>
     <p id="translation">Copy text to translate...</p>
     <script src="popup.js"></script>
 </body>
