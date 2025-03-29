@@ -6,36 +6,44 @@
     <title>Clipboard Translator</title>
   
     <style>
-        body {
-          width: 280px;
-          padding: 10px;
-          font-family: 'Comic Sans MS', cursive;
-        }
-        h3 {
-          font-size: 18px;
-          font-weight: normal;
-          color: #e91e63;
-        }
-        #original {
-          margin-top: 10px;
-          font-family: 'Comic Sans MS', cursive;
-          font-size: 14px;
-          font-weight: normal;
-          color: #f06292; /* 稍浅的粉色，与翻译区分 */
-          word-wrap: break-word;
-          background-color: #fce4ec; /* 浅粉背景 */
-          padding: 8px;
-          border-radius: 4px;
-        }
-        #translation {
-          margin-top: 10px;
-          font-family: 'Comic Sans MS', cursive;
-          font-size: 14px;
-          font-weight: normal;
-          color: #d81b60;
-          word-wrap: break-word;
-        }
-      </style>
+      body {
+        width: 280px;
+        padding: 10px;
+        font-family: Arial, sans-serif; /* 改为更简洁的字体 */
+        background-color: #f5f5f5; /* 浅灰色背景 */
+        color: #333; /* 深灰色文字 */
+      }
+      h3 {
+        font-size: 18px;
+        font-weight: normal;
+        color: #000; /* 纯黑色标题 */
+        margin-bottom: 15px;
+      }
+      #original {
+        margin-top: 10px;
+        font-family: Arial, sans-serif;
+        font-size: 14px;
+        font-weight: normal;
+        color: #555; /* 中灰色原文 */
+        word-wrap: break-word;
+        background-color: #e0e0e0; /* 浅灰色背景 */
+        padding: 8px;
+        border-radius: 4px;
+        border-left: 3px solid #888; /* 添加左侧边框 */
+      }
+      #translation {
+        margin-top: 10px;
+        font-family: Arial, sans-serif;
+        font-size: 14px;
+        font-weight: normal;
+        color: #000; /* 纯黑色翻译 */
+        word-wrap: break-word;
+        background-color: #eee; /* 更浅的灰色背景 */
+        padding: 8px;
+        border-radius: 4px;
+        border-left: 3px solid #333; /* 添加左侧边框 */
+      }
+    </style>
 </head>
 <body>
     <h3>Clipboard Translator</h3>
