@@ -1,5 +1,5 @@
 const DEEPSEEK_API_KEY = "sk-7a3923494dce40d7bd7cb885bd87bd01"; // 替换为你的 DeepSeek API 密钥
-const DEEPSEEK_API_URL = "https://api.deepseek.com/v1/chat/completions";
+const DEEPSEEK_API_URL = "https://api.deepseek.com/v1/chat/completions"; //deepseek URL
 
 chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
   if (request.type === 'COPIED_TEXT') {
