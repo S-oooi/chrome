@@ -8,10 +8,13 @@
     <style>
       body {
         width: 280px;
+        min-height: 100px; /* 最小高度 */
         padding: 10px;
         font-family: Arial, sans-serif; /* 改为更简洁的字体 */
         background-color: #f5f5f5; /* 浅灰色背景 */
         color: #333; /* 深灰色文字 */
+        box-sizing: border-box; /* 确保 padding 不影响尺寸 */
+        overflow: hidden; /* 避免滚动条 */
       }
       h3 {
         font-size: 18px;
